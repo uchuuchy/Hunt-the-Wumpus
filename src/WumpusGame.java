@@ -36,9 +36,11 @@ public class WumpusGame {
                 if (map.getVertex(cur).wump.isHasWumpus()) {
                     System.out.println("AHA! YOU GOT THE WUMPUS!\nHEE HEE HEE - THE WUMPUS'LL GET YOU NEXT TIME\n");
                     endOfGame = true;
+                    break;
                 } else if (cur == loc) {
                     System.out.println("OUCH! ARROW GOT YOU\nHA HA HA - YOU LOSE!\n");
                     endOfGame = true;
+                    break;
                 }
             }
             arrows--;
